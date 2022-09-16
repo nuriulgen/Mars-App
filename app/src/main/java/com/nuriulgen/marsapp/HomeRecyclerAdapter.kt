@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.nuriulgen.marsapp.presentation.home.model.RealeStateModel
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.recycler_card.view.*
 import kotlinx.android.synthetic.main.recycler_row.view.*
 
 class HomeRecyclerAdapter(val postList : ArrayList<RealeStateModel>) : RecyclerView.Adapter<HomeRecyclerAdapter.MarsHolder>() {
@@ -16,15 +17,15 @@ class HomeRecyclerAdapter(val postList : ArrayList<RealeStateModel>) : RecyclerV
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MarsHolder {
         val adapterInflater = LayoutInflater.from(parent.context)
-        val view = adapterInflater.inflate(R.layout.recycler_row,parent,false)
+        val view = adapterInflater.inflate(R.layout.recycler_card,parent,false)
         return MarsHolder(view)
     }
 
     override fun onBindViewHolder(holder: MarsHolder, position: Int) {
-        holder.itemView.recycler_textView1.text = postList[position].price.toString()
-        holder.itemView.recycler_textView2.text = postList[position].id
+        holder.itemView.recycler_textView4.text = postList[position].price.toString()
+        holder.itemView.recycler_textView5.text = postList[position].id
 
-        Picasso.get().load(postList[position].img_src).into(holder.itemView.recycler_imageView)
+        Picasso.get().load(postList[position].img_src).into(holder.itemView.recycler_imageView1)
     }
 
     override fun getItemCount(): Int {

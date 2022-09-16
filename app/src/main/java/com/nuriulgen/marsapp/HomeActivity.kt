@@ -40,7 +40,6 @@ class HomeActivity : AppCompatActivity() {
             override fun onResponse(call: Call<List<RealeStateModel>>, response: Response<List<RealeStateModel>>) {
                 if(response.isSuccessful && response.body() !=null){
                     postlist.addAll(response.body()!!)
-                    println(postlist)
                     recyclerAdapter.notifyDataSetChanged()
                 }
             }
