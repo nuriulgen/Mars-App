@@ -1,18 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    </data>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6A3BB4"
+        android:orientation="vertical"
+        tools:context=".presentation.onBoard.view.OnBoardActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="354dp"
+            android:layout_height="148dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:textFontWeight="700"
+            android:fontFamily="@font/nunito_extrabold"
+            android:text="@string/on_board_title"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="387dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="208dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_astronomer" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/CustomButtonStyle"
+            android:layout_width="345dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:drawableRight="@drawable/rocket"
+            android:gravity="center"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:text="Let's Go"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.336"
+            tools:ignore="RtlHardcoded" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
