@@ -17,10 +17,10 @@
         android:theme="@style/Theme.MarsApp"
         tools:targetApi="31">
         <activity
-            android:name=".HomeActivity"
+            android:name=".presentation.home.view.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeDetailActivity"
+            android:name=".presentation.home.view.HomeDetailActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.onboard.view.OnBoardActivity"
