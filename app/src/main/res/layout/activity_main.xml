@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -34,7 +35,8 @@
             app:layout_constraintHorizontal_bias="0.333"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_astronomer" />
+            app:srcCompat="@drawable/ic_astronomer"
+            android:contentDescription="@string/astronomer" />
 
         <Button
             android:id="@+id/button2"
@@ -47,7 +49,7 @@
             android:gravity="center"
             android:paddingLeft="100dp"
             android:paddingRight="100dp"
-            android:text="Let's Go"
+            android:text="@string/let_s_go"
             android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

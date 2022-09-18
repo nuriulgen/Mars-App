@@ -33,8 +33,9 @@ class HomeRecyclerAdapter(val postList : ArrayList<RealeStateModel>) : RecyclerV
 
         holder.itemView.setOnClickListener {
             val intent =  Intent(holder.itemView.context, HomeDetailActivity :: class.java)
-            intent.putExtra("price",postList.get(position).id)
+            intent.putExtra("id",postList.get(position).id)
             intent.putExtra("type",postList.get(position).type)
+            intent.putExtra("price",postList.get(position).price)
             intent.putExtra("image",postList.get(position).img_src)
 
             holder.itemView.context.startActivity(intent)

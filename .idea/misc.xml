@@ -7,10 +7,12 @@
         <entry key="..\:/Mars App/app/src/main/res/drawable/circular_button.xml" value="0.2545" />
         <entry key="..\:/Mars App/app/src/main/res/drawable/gradient_background.xml" value="0.1" />
         <entry key="..\:/Mars App/app/src/main/res/drawable/ic_distance.xml" value="0.227" />
+        <entry key="..\:/Mars App/app/src/main/res/layout-v28/activity_main.xml" value="0.25" />
         <entry key="..\:/Mars App/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Mars App/app/src/main/res/layout/activity_home_detail.xml" value="0.24615384615384617" />
-        <entry key="..\:/Mars App/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Mars App/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Mars App/app/src/main/res/layout/card_image.xml" value="0.24895833333333334" />
+        <entry key="..\:/Mars App/app/src/main/res/layout/fragment_blank.xml" value="0.25" />
         <entry key="..\:/Mars App/app/src/main/res/layout/recycler_card.xml" value="0.24895833333333334" />
         <entry key="..\:/Mars App/app/src/main/res/layout/recycler_card_layout.xml" value="0.24895833333333334" />
         <entry key="..\:/Mars App/app/src/main/res/layout/recycler_row.xml" value="0.264" />

@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <variable
             name="adapter"
             type="com.nuriulgen.marsapp.presentation.adapter.HomeRecyclerAdapter" />
@@ -20,14 +19,15 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="121dp"
+            android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="32dp"
-            android:text="Mars"
-            android:textColor="@color/teal_200"
-            android:textSize="30dp"
+            android:fontFamily="@font/nunito_extrabold"
+            android:text="Milky Way Galaxy"
             android:textAlignment="center"
+            android:textColor="#272728"
+            android:textFontWeight="400"
+            android:textSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -39,16 +39,16 @@
             android:id="@+id/recyclerView2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="70dp"
-            android:layout_marginEnd="1dp"
+            android:layout_marginEnd="10dp"
             android:layout_marginBottom="1dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintVertical_bias="0.0"
             tools:listitem="@layout/recycler_card" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

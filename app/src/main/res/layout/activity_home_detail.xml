@@ -10,8 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/gradient_background">
-
+        android:background="#6A3BB4">
 
         <ImageView
             android:id="@+id/imageView3"
@@ -21,7 +20,8 @@
             android:src="@drawable/ic_earth"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/earth">
 
         </ImageView>
 
@@ -29,8 +29,9 @@
             android:id="@+id/type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="28dp"
+            android:textSize="28sp"
             android:text=""
             android:textColor="#F9AD1A"
             app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +45,8 @@
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/back" />
+            app:srcCompat="@drawable/back"
+            android:contentDescription="@string/backbutton" />
 
         <com.google.android.material.divider.MaterialDivider
             android:id="@+id/materialDivider"
@@ -63,17 +65,17 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="70dp"
             android:layout_marginTop="44dp"
-            android:text="TextView"
+            android:text=""
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialDivider" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="44dp"
             android:layout_marginEnd="52dp"
-            android:text="TextView"
+            android:text=""
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialDivider" />
 
@@ -85,7 +87,8 @@
             android:layout_marginTop="32dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialDivider"
-            app:srcCompat="@drawable/distance" />
+            app:srcCompat="@drawable/distance"
+            android:contentDescription="@string/distance" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
